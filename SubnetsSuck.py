@@ -11,7 +11,7 @@ def findipclass(IP):
     FirstOctet = int(ip.format().split('.')[0])
     #IP Ranges
     ARange = range(1, 127)
-    BRange = range(128, 192)
+    BRange = range(128, 191)
     CRange = range(192, 224)
     if FirstOctet in ARange:
         return 'a'
